@@ -1,15 +1,14 @@
-let a=prompt('totalCash')
-let b=prompt('watchesCount')
-let c=prompt('earringsCount')
-let bPrice=prompt('watch')
-let cPrice=prompt('earring')
-parseFloat(a)
-parseInt(b)
-parseInt(c)
-parseFloat(bPrice)
-parseFloat(cPrice)
-let v=parseInt(b)*parseFloat(bPrice)
-let w=parseInt(c)*parseFloat(cPrice)
-let z=v+w
-if (a>z) document.write('true')
-else document.write('false')
+let totalCash = parseFloat(prompt('Количество денег'));
+let watchesCount = parseInt(prompt('Количество часов'));
+let earringsCount = parseInt(prompt('Количество сережек'));
+let watchesPrice = parseFloat(prompt('Стоимость часов'));
+let earringsPrice = parseFloat(prompt('Стоимость сережек'));
+let allWatchesPrice = watchesCount * watchesPrice;
+let allEarringsPrice = earringsCount * earringsPrice;
+let spendingCash = allWatchesPrice + allEarringsPrice;
+if (totalCash > spendingCash) {
+	document.write('true')
+}
+else {
+	document.write('false')
+}
