@@ -1,12 +1,11 @@
-let totalCash = parseFloat(prompt('Количество денег'));
-let watchesCount = parseInt(prompt('Количество часов'));
-let earringsCount = parseInt(prompt('Количество сережек'));
-let watchesPrice = parseFloat(prompt('Стоимость часов'));
-let earringsPrice = parseFloat(prompt('Стоимость сережек'));
-let allWatchesPrice = watchesCount * watchesPrice;
-let allEarringsPrice = earringsCount * earringsPrice;
-let spendingCash = allWatchesPrice + allEarringsPrice;
-if (totalCash > spendingCash) {
+const totalCash = parseFloat(prompt('Количество денег'));
+const watchesCount = parseInt(prompt('Количество часов'));
+const earringsCount = parseInt(prompt('Количество сережек'));
+const watchesPrice = parseFloat(prompt('Стоимость часов'));
+const earringsPrice = parseFloat(prompt('Стоимость сережек'));
+const allWatchesPrice = watchesCount * watchesPrice;
+const allEarringsPrice = earringsCount * earringsPrice;
+if (totalCash > allWatchesPrice + allEarringsPrice) {
 	document.write('true')
 }
 else {
