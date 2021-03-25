@@ -1,0 +1,90 @@
+@import url(reset.css);
+
+@keyframes go {
+	0% {
+		top: 0;
+		left: 0;
+	}
+	20% {
+		top: 100px;
+		left: 200px;
+		background-color: yellow;
+	}
+	40% {
+		top: 400px;
+		left: 300px;
+		background-color: green;
+	}
+	60% {
+		top: 200px;
+		left: 500px;
+		background-color: lightblue;
+	}
+	80% {
+		top: 20px;
+		left: 500px;
+		background-color: purple;
+	}
+	100% {
+		top: 0;
+		left: 0;
+		background-color: black;
+	}
+	/*from {
+		top: 0;
+		left: 0;
+	}
+	to {
+		top: 300px;
+		left: 500px;
+		background-color: yellow ;
+	}*/
+}
+
+body{
+	background-color: lightgrey;
+}
+
+.button{
+	display:flex;
+}
+
+button{
+	height: 100px;
+	width: 300px;
+	background-color: orange;
+	border-radius: 20px;
+	margin: auto;
+	border-color: blue;
+	outline: none;
+}
+
+.ball{
+	height: 200px;
+	width: 200px;
+	border-radius: 100px;
+	background-color: red;
+	position: relative;
+	animation-name: go;
+	animation-duration: 5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count:infinite;
+	animation-direction: alternate;
+	animation-play-state: paused;
+}
+
+.text{
+	height: 2000px;
+	display:flex;
+	justify-content: center;
+}
+
+p{
+	position:relative;
+	top: 1000px;
+	width: 300px;
+	max-height: 100px;
+	background-color: lightyellow;
+	transition: 1s;
+	opacity: 0.2;
+}

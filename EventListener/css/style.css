@@ -1,0 +1,9 @@
+@import url(reset.css);
+
+body{
+	background-color: lightgreen;
+}
+
+h1, h2{
+	display:none;
+}

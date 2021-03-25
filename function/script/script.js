@@ -17,12 +17,12 @@ function haveEnough(){
 }
 
 document.body.innerHTML = haveEnough();
-document.body.innerHTML = haveEnough();
-document.body.innerHTML = haveEnough();
-document.body.innerHTML = haveEnough();
-document.body.innerHTML = haveEnough();
-document.body.innerHTML = haveEnough();
-document.body.innerHTML = haveEnough();
-document.body.innerHTML = haveEnough();
-document.body.innerHTML = haveEnough();
-document.body.innerHTML = haveEnough();
+// document.body.innerHTML = haveEnough();
+// document.body.innerHTML = haveEnough();
+// document.body.innerHTML = haveEnough();
+// document.body.innerHTML = haveEnough();
+// document.body.innerHTML = haveEnough();
+// document.body.innerHTML = haveEnough();
+// document.body.innerHTML = haveEnough();
+// document.body.innerHTML = haveEnough();
+// document.body.innerHTML = haveEnough();
