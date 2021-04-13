@@ -1,7 +1,9 @@
 let a = +prompt('введите число');
 
 function number(){
-	return Math.abs(a**(Math.floor(Math.random()*(9-1)+1)));
+	return Math.abs(a**(Math.round(Math.random()*(9-1)+1)));
 }
 
-document.body.innerHTML = number();
+console.log(number());
+
+// document.body.innerHTML = number();
