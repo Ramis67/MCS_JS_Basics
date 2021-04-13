@@ -1,6 +1,6 @@
 
 
-const list = document.getElementsByTagName('li');
+// const list = document.getElementsByTagName('li');
 
 // for(li of list){
 // 	li.style.backgroundColor = 'green';
