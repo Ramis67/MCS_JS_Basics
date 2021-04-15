@@ -21,14 +21,9 @@ let newSchool = [
   ]
 ]
 
-for(ASrappers of newSchool){
-	let SArappers = newSchool[0][0] + ' ' + newSchool[1][0];
-	console.log(SArappers);
-}
 
-for(key in newSchool){
-	let SAproducers = `${newSchool[0][1][0]} ${newSchool[0][1][1]}
-	 ${newSchool[0][1][2]} ${newSchool[1][1][0]} 
-	 ${newSchool[1][1][1]} ${newSchool[1][1][2]}`;
-	console.log(SAproducers);
-}
+newSchool.forEach(function(massive){
+  for(name of massive){
+    console.log(name);
+  }
+})
