@@ -21,14 +21,32 @@ let costOfCrypto = document.querySelector('.cost');
 let colorOfCrypto = document.querySelector('div');
 
 for(currency of crypto){
-    nameOfCrypto = currency.name;
-    costOfCrypto = currency.price;
-    colorOfCrypto.style.color = currency.color;
-    colorofCrypto.style.width = currency.price / 20 + '%';
+    nameOfCrypto.innerHTML = currency.name;
+    costOfCrypto.innerHTML = currency.price;
+    colorOfCrypto.style.backgroundColor = currency.color;
+    colorOfCrypto.style.width = currency.price / 20 + '%';
+    colorOfCrypto.style.height = '2rem';
 }
 
+// For in в For of (ВЫВОДИТ ТОЛЬКО Bitcoin 3 раза
+// если задать querySelectorAll):
 
+// for(currency of crypto){
+//     for(key in nameOfCrypto){
+//     nameOfCrypto[key].innerHTML = currency.name;
+//   }
+//     for(key in costOfCrypto){
+//     costOfCrypto[key].innerHTML = currency.price;
+//   }
+//     for(key in colorOfCrypto){
+//     colorOfCrypto[key].style.backgroundColor = currency.color;
+//     colorOfCrypto[key].style.width = currency.price / 20 + '%';
+//     colorOfCrypto[key].style.height = '2rem';
+//   } 
+// }
+ 
 
+//ПЕРВОЕ РЕШЕНИЕ:
 
 // bitcoin.innerHTML = crypto[0].name;
 // etherium.innerHTML = crypto[1].name;
