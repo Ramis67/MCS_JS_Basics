@@ -1,7 +1,5 @@
 const form = document.forms;
 
-let temp = document.querySelector('.temperature');
-
 form.onsubmit = function(e){
 
 	e.preventDefault();
@@ -19,6 +17,8 @@ form.onsubmit = function(e){
 	xhr.send();
 
 	let DATA = JSON.parse(xhr.responseText);
+
+	let temp = document.querySelector('.temperature');
 
 	if(xhr.status != 200){
 		console.log(xhr.status + ' ' + xhr.statusText);
