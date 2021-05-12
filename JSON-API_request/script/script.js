@@ -1,4 +1,4 @@
-const form = document.forms;
+const form = document.forms[0];
 
 form.onsubmit = function(e){
 
@@ -18,11 +18,16 @@ form.onsubmit = function(e){
 
 	let DATA = JSON.parse(xhr.responseText);
 
+	console.log(DATA);
+
 	let temp = document.querySelector('.temperature');
+
+	let speedOfWind = document.querySelector('.speedofwind');
 
 	if(xhr.status != 200){
 		console.log(xhr.status + ' ' + xhr.statusText);
 	}else{
-		temp.innerHTML = DATA.main.temp;
+		temp.innerHTML = ' ' + (DATA.main.temp - 273,5);
+		speedOfWind.innerHTML = ' ' + DATA.wind.speed;
 	}
 }
